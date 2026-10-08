@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/color_fondo_pantalla"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:src="@drawable/foto_tortilla"
+        android:contentDescription="@string/titulo_receta"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/titulo_receta"
+        style="@style/EstiloTitulo"
+        android:layout_marginBottom="8dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_ingredientes"
+        android:textColor="@color/color_texto_principal"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lista_ingredientes"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_aceptar"
+        style="@style/EstiloBoton"
+        android:drawableLeft="@drawable/baseline_food_bank_24"/>
+
+</LinearLayout>
