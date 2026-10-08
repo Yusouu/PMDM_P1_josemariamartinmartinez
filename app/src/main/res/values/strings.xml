@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">PMDM_P1_josemariamartinmartinez</string>
+    <string name="app_name">Recetario yusito</string>
+    <string name="titulo_receta">Tortilla de Patatas con queso</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="saludo_usuario">¡Hola, %1$s!</string>
+    <string name="descripcion_receta">Receta casera española.</string>
+    <string name="etiqueta_ingredientes">Ingredientes principales</string>
+
+    <string-array name="lista_ingredientes">
+        <item>Patatas</item>
+        <item>Huevos</item>
+        <item>Cebolla</item>
+        <item>queso</item>
+        <item>pimienta</item>
+    </string-array>
 </resources>
