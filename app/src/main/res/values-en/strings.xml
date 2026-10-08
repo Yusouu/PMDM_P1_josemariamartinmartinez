@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yusito Recipe Book</string>
+    <string name="titulo_receta">Cheese Potato Omelette</string>
+    <string name="boton_aceptar">Accept</string>
+    <string name="boton_cancelar">Cancel</string>
+    <string name="saludo_usuario">Hello, %1$s!</string>
+    <string name="descripcion_receta">Spanish homemade recipe.</string>
+    <string name="etiqueta_ingredientes">Main ingredients</string>
+
+    <string-array name="lista_ingredientes">
+        <item>Potatoes</item>
+        <item>Eggs</item>
+        <item>Onion</item>
+        <item>Cheese</item>
+        <item>Pepper</item>
+    </string-array>
+</resources>
